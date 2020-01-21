@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="Firebase1" customModuleProvider="target">
+            <connections>
+                <outlet property="messageTextField" destination="2Kb-A7-FJe" id="nbi-qv-8q9"/>
+                <outlet property="nameTextField" destination="2ng-jx-vU5" id="1o3-l2-WOn"/>
+                <outlet property="sendButton" destination="Ty2-iA-5kf" id="R8z-UE-vQx"/>
+                <outlet property="tableView" destination="ak8-z7-xGt" id="SDd-0f-CrR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MI3-AF-RFx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ak8-z7-xGt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Kb-A7-FJe">
+                    <rect key="frame" x="16" y="611" width="291" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yWX-p6-fiP"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty2-iA-5kf">
+                    <rect key="frame" x="323" y="616" width="36" height="30"/>
+                    <state key="normal" title="Send"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ng-jx-vU5">
+                    <rect key="frame" x="16" y="561" width="291" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6BF-X8-IeP"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Kb-A7-FJe" secondAttribute="bottom" constant="16" id="3OC-6g-yge"/>
+                <constraint firstItem="Ty2-iA-5kf" firstAttribute="centerY" secondItem="2Kb-A7-FJe" secondAttribute="centerY" id="3cx-Bz-OEj"/>
+                <constraint firstItem="2Kb-A7-FJe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="4or-h7-fs4"/>
+                <constraint firstItem="2ng-jx-vU5" firstAttribute="trailing" secondItem="2Kb-A7-FJe" secondAttribute="trailing" id="749-nS-tJ9"/>
+                <constraint firstItem="ak8-z7-xGt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Hq-g7-wjB"/>
+                <constraint firstItem="2Kb-A7-FJe" firstAttribute="top" secondItem="2ng-jx-vU5" secondAttribute="bottom" constant="10" id="E7t-Ef-Lt8"/>
+                <constraint firstAttribute="trailing" secondItem="ak8-z7-xGt" secondAttribute="trailing" id="LFZ-40-q23"/>
+                <constraint firstItem="Ty2-iA-5kf" firstAttribute="leading" secondItem="2Kb-A7-FJe" secondAttribute="trailing" constant="16" id="O5v-lT-esg"/>
+                <constraint firstAttribute="trailing" secondItem="Ty2-iA-5kf" secondAttribute="trailing" constant="16" id="WT7-p1-Rhd"/>
+                <constraint firstItem="2ng-jx-vU5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="c8U-Su-vp0"/>
+                <constraint firstItem="ak8-z7-xGt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ceo-ez-9dL"/>
+                <constraint firstItem="2ng-jx-vU5" firstAttribute="top" secondItem="ak8-z7-xGt" secondAttribute="bottom" constant="8" id="n4D-eP-HhW"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
